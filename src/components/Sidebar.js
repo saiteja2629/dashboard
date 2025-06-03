@@ -9,10 +9,16 @@ const Sidebar = () => {
         setSelectedValue(event.target.value);
       };
     return (
-  <Nav className="flex-column text-white p-3 sidebar" style={{ width: '250px', height: '100vh' }}>
-    <Nav.Item>
-      <Link to="/" className="nav-link text-white">Filters</Link>
-    </Nav.Item>
+  <Nav className="flex-column text-white p-3 sidebar " style={{ width: '250px', height: '100vh'}}>
+  
+  <div>
+    <span style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1rem' }} >
+       
+    <Link to="/" className="text-white fw-bold">Filters</Link>
+    <button className="btn btn-sm btn-outline-light">Reset</button>
+    <i className="bi bi-arrow-left" style={{ color: 'black', cursor: 'pointer' }}></i>
+
+    </span>
     <Form.Group controlId="exampleForm.SelectCustom">
       <Form.Label>Year</Form.Label>
       <Form.Select
@@ -114,6 +120,7 @@ const Sidebar = () => {
         <option value="3">Option 3</option>
       </Form.Select>
     </Form.Group>
+    </div>
   </Nav>
     )
 };

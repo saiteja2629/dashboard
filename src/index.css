@@ -13,5 +13,18 @@ code {
     monospace;
 }
 .sidebar{
-background-color:   hsl(252deg 3.07% 68.04%)
+background-color:   #9dafbc
 }
+
+
+
+.th-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar {
+  background-color: #9dafbc;
+  overflow-y: auto;
+}
+
