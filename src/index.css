@@ -27,4 +27,22 @@ background-color:   #9dafbc
   background-color: #9dafbc;
   overflow-y: auto;
 }
+.filters{
+  text-decoration: none;
+  font-size: large;
 
+}
+.reset{
+  border: none;
+}
+
+.form-group label {
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* For selects */
+.form-group select {
+  margin-bottom: 1rem;
+  display: block;
+}
